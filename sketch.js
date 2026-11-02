@@ -1,11 +1,4 @@
 function setup() {
-  createCanvas(380, 570);
-}
-
-function draw() {
-  background(220);
-}
-function setup() {
   createCanvas(600, 400);
   noStroke();
 }
