@@ -14,10 +14,14 @@ body {
   color: #5d6b79;
 }
 
-/* p5 会把 canvas 追加到 body 末尾，用 order 把它提到两段文字之间 */
+/* p5 会把 canvas 放进它自己创建的 <main> 里，用 order 控制顺序：说明 → 画布 → 视频 */
+body > main {
+  order: 0;
+  margin: 0;
+}
+
 canvas {
   display: block;
-  order: -1;
   border-radius: 4px;
 }
 
@@ -47,6 +51,7 @@ canvas {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  order: 1;
   margin-top: 10px;
   padding-top: 22px;
   border-top: 1px solid #e8edf2;
