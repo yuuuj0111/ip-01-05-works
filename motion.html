@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>几何构成 · 动态版 · 虞静</title>
+    <style>
+      html, body { margin: 0; padding: 0; }
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        padding: 24px 16px;
+        background: #ffffff;
+        box-sizing: border-box;
+        font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+        color: #5d6b79;
+      }
+      video {
+        width: min(640px, 100%);
+        border-radius: 8px;
+        background: #f3f6f8;
+        box-shadow: 0 1px 2px rgba(20, 35, 50, 0.06), 0 10px 28px rgba(20, 35, 50, 0.10);
+      }
+      p { margin: 0; font-size: 13px; letter-spacing: 0.02em; text-align: center; line-height: 1.7; }
+      p b { color: #2b3540; font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <video src="demo.mp4" controls autoplay muted loop playsinline></video>
+    <p><b>几何构成 · 动态版</b><br/>鱼嘴一张一合，把从右边游过来的三角形一个个吃掉，然后循环往复。</p>
+  </body>
+</html>
