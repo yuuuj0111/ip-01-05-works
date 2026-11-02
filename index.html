@@ -17,5 +17,12 @@
     </div>
 
     <script src="sketch.js"></script>
+
+    <!-- 被作品集 iframe 内嵌时精简版式：隐藏说明与视频，只保留画布 -->
+    <script>
+      if (window.self !== window.top) {
+        document.documentElement.classList.add('embed');
+      }
+    </script>
   </body>
 </html>
